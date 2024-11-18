@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Plotting Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Website Plotting Tool</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>Data Input</h2>
+      <textarea id="data-input" placeholder="Enter data as CSV (e.g., x,y\n1,2\n3,4)" rows="6"></textarea>
+      <label for="plot-type">Choose Plot Type:</label>
+      <select id="plot-type">
+        <option value="line">Line Chart</option>
+        <option value="bar">Bar Chart</option>
+        <option value="scatter">Scatter Plot</option>
+      </select>
+      <button id="plot-btn">Generate Plot</button>
+    </section>
+
+    <section class="plot-section">
+      <h2>Generated Plot</h2>
+      <canvas id="plot-canvas"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Website Plotting Tool</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
